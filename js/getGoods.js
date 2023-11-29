@@ -8,7 +8,6 @@ const getGoods = () => {
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem('goods', JSON.stringify(data));
-        const goods = JSON.parse(localStorage.getItem('goods'));
       });
   };
 
